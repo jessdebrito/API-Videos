@@ -1,7 +1,6 @@
 # API de filmes e séries
 
-Deve ser possível cadastrar, atualizar, excluir, ler de forma múltipla e individual
-
+Deve ser possível cadastrar, atualizar, excluir, ler de forma múltipla e individual.
 Deverão existir filtros por gênero e busca por título
 
 ### Entidade:
