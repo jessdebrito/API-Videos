@@ -24,5 +24,7 @@ Rotas:
 ## Instalados no início
 ### Express / Typescript
     npm init -y
-        npm install express
-            npm install -D typescript ts-node-dev @types/express
+    
+    npm install express
+
+    npm install -D typescript ts-node-dev @types/express
