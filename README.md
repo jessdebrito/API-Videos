@@ -4,7 +4,7 @@ Deve ser possível cadastrar, atualizar, excluir, ler de forma múltipla e indiv
 
 Deverão existir filtros por gênero e busca por título
 
-Entidade:
+### Entidade:
 * id - númerico 
 * title - texto
 * description - text 
@@ -13,7 +13,7 @@ Entidade:
 * createdAt - data 
 * updatedAt - data
 
-Rotas: 
+### Rotas: 
 * /movies
 * POST / 
 * PATCH /:id
@@ -22,9 +22,13 @@ Rotas:
 * GET /:id
 
 ## Instalados no início
-### Express / Typescript
+
+### Start Node
     npm init -y
-    
+
+### Instalar Express
     npm install express
+
+### Instalação de TypeScript
 
     npm install -D typescript ts-node-dev @types/express
