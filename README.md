@@ -24,7 +24,7 @@ GET /:id
 Express / Typescript
 
 
-Instalados no início:
-    npm init -y:
-    npm install express:
-    npm install -D typescript ts-node-dev @types/express:
+Instalados no início
+    npm init -y
+    npm install express
+    npm install -D typescript ts-node-dev @types/express
