@@ -1,17 +1,17 @@
-API de filmes e séries
+# API de filmes e séries
 
 Deve ser possível cadastrar, atualizar, excluir, ler de forma múltipla e individual
 
 Deverão existir filtros por gênero e busca por título
 
 Entidade:
-id - númerico 
-title - texto
-description - text 
-genre - text 
-video - text 
-createdAt - data 
-updatedAt - data
+* id - númerico 
+* title - texto
+* description - text 
+* genre - text 
+* video - text 
+* createdAt - data 
+* updatedAt - data
 
 Rotas: 
 * /movies
@@ -21,10 +21,8 @@ Rotas:
 * GET / (queryParams: search e genre) 
 * GET /:id
 
-Express / Typescript
-
-
 ## Instalados no início
+### Express / Typescript
     npm init -y
-    npm install express
-    npm install -D typescript ts-node-dev @types/express
+        npm install express
+            npm install -D typescript ts-node-dev @types/express
