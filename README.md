@@ -4,7 +4,7 @@ Deve ser possível cadastrar, atualizar, excluir, ler de forma múltipla e indiv
 
 Deverão existir filtros por gênero e busca por título
 
-    Entidade:
+Entidade:
 id - númerico 
 title - texto
 description - text 
@@ -13,7 +13,7 @@ video - text
 createdAt - data 
 updatedAt - data
 
-    Rotas: 
+Rotas: 
 /movies
 POST / 
 PATCH /:id
