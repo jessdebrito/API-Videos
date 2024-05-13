@@ -31,3 +31,6 @@ Deverão existir filtros por gênero e busca por título
 ### Instalação de TypeScript
 
     npm install -D typescript ts-node-dev @types/express
+
+### Criar e depois inportar ts config
+    npx tsc --init
