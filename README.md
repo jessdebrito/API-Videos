@@ -32,5 +32,5 @@ Deverão existir filtros por gênero e busca por título
 
     npm install -D typescript ts-node-dev @types/express
 
-### Criar e depois inportar ts config
+### Criar e depois importar ts config
     npx tsc --init
