@@ -14,17 +14,17 @@ createdAt - data
 updatedAt - data
 
 Rotas: 
-/movies
-POST / 
-PATCH /:id
-DELETE /:id
-GET / (queryParams: search e genre) 
-GET /:id
+* /movies
+* POST / 
+* PATCH /:id
+* DELETE /:id
+* GET / (queryParams: search e genre) 
+* GET /:id
 
 Express / Typescript
 
 
-Instalados no início
+## Instalados no início
     npm init -y
     npm install express
     npm install -D typescript ts-node-dev @types/express
