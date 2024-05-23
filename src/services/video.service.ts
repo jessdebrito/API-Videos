@@ -1,6 +1,6 @@
 import { generateId, videoDatabase } from "../database/database";
 import {
-  IVideo,
+  TVideo,
   TCreateVideoData,
   TUpdateVideoData,
 } from "../interface/video.interface";
@@ -9,7 +9,7 @@ export class VideoService {
   create(data: TCreateVideoData) {
     const now = new Date();
 
-    const newVideo: IVideo = {
+    const newVideo: TVideo = {
       id: generateId(),
       ...data,
       createdAt: now,
@@ -42,9 +42,9 @@ export class VideoService {
   update(id: number, data: TUpdateVideoData) {
     const currentVideo = videoDatabase.find(
       (video) => video.id === id
-    ) as IVideo;
+    ) as TVideo;
     const now = new Date();
-    const updateVideo: IVideo = {
+    const updateVideo: TVideo = {
       ...currentVideo,
       ...data,
       updatedAt: now,

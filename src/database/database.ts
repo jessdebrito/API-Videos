@@ -1,6 +1,6 @@
-import { IVideo } from "../interface/video.interface";
+import { TVideo } from "../interface/video.interface";
 
-export const videoDatabase: IVideo[] = [];
+export const videoDatabase: TVideo[] = [];
 
 let id = 0;
 
