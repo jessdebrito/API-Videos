@@ -1,20 +1,24 @@
 import { Router } from "express";
 import { VideoController } from "../controllers/video.controllers";
-import { IsCreateVideoBodyValid } from "../middleware/isCreateVideoBodyValid";
 import { IsVideoIdValid } from "../middleware/isVideoIdValid.middleware";
-import { IsUpdateVideoBodyValid } from "../middleware/isUpdateVideoBodyValid.middleware";
+import { ValidateBody } from "../middleware/validateBody.middleware";
+import { createVideoSchema, updateVideoSchema } from "../schemas/video.schema";
 
 export const videoRouter = Router();
 
 const videoController = new VideoController();
 
-videoRouter.post("/", IsCreateVideoBodyValid.execute, videoController.create);
+videoRouter.post(
+  "/",
+  ValidateBody.execute(createVideoSchema),
+  videoController.create
+);
 videoRouter.get("/", videoController.getMany);
 videoRouter.get("/:id", videoController.getOne);
 videoRouter.patch(
   "/:id",
   IsVideoIdValid.execute,
-  IsUpdateVideoBodyValid.execute,
+  ValidateBody.execute(updateVideoSchema),
   videoController.update
 );
 videoRouter.delete("/:id", IsVideoIdValid.execute, videoController.remove);
