@@ -3,7 +3,9 @@ import { createVideoSchema } from "../schemas/video.schema";
 
 export class IsCreateVideoBodyValid {
   static execute(request: Request, response: Response, next: NextFunction) {
-    createVideoSchema.parse(request.body)
+    // validação e serialização
+    request.body = createVideoSchema.parse(request.body);
+
     
     next();
   }
