@@ -1,4 +1,8 @@
-export interface IVideo {
+
+import { z } from "zod";
+import { videoSchema } from "../schemas/video.schema";
+
+/* export interface IVideo {
     id: number;
     title: string;
     description: string;
@@ -6,12 +10,13 @@ export interface IVideo {
     video: string;
     createdAt: Date;
     updatedAt?: Date;
-  }
-  
-  export type TCreateVideoData = Pick<
-    IVideo,
-    "title" | "description" | "genre" | "video"
-  >;
-  
-  export type TUpdateVideoData = Partial<TCreateVideoData>;
-  
+  } */
+
+export type TVideo = z.infer<typeof videoSchema>;
+
+export type TCreateVideoData = Pick<
+  TVideo,
+  "title" | "description" | "genre" | "video"
+>;
+
+export type TUpdateVideoData = Partial<TCreateVideoData>;
